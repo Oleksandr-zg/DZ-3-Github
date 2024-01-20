@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="GitHub and Git">
+    <meta name="keywords" content="GitHub, git, commands in git, команди в git">
+    <meta name="author" content="Oleksandr">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Commands in git</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Команди в git</h1>
+        <nav>
+            <a href="./index.html">Головна</a> |
+            <a href="./gallery/gallery.html">Галерея</a>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Команда</th>
+                    <th>-----</th>
+                    <th>Опис</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>git init </b><i>project_name</i></td>
+                    <td>Де <i>project_name</i> назва проекту</td>
+                    <td>Створює новий локальний репозиторій з заданим ім’ям</td>
+                </tr>
+                <tr>
+                    <td><b>git clone </b><i>url - адрес</i></td>
+                    <td>Отримання репозиторія за його url - адресою</td>
+                    <td>Скачає репозиторій та всю його історію змін</td>
+                </tr>
+                <tr>
+                    <td><b>git branch </b><i>branch_name</i></td>
+                    <td>Ім’я нової гілки <i>branch_name</i></td>
+                    <td>Створення нової гілки</td>
+                </tr>
+                <tr>
+                    <td><b>git checkout –b </b><i>branch_name</i></td>
+                    <td>Ім’я нової гілки <i>branch_name</i></td>
+                    <td>Спосіб створити нову гілку та одразу перейти в неї</td>
+                </tr>
+                <tr>
+                    <td><b>git branch</b></td>
+                    <td>------</td>
+                    <td>Щоб подивитись список усіх гілок</td>
+                </tr>
+                <tr>
+                    <td><b>git branch –d </b><i>branch_name</i></td>
+                    <td>Ім’я гілки яку видаляють <i>branch_name</i></td>
+                    <td>Щоб видалити відповідну гілку</td>
+                </tr>
+                <tr>
+                    <td><b>git branch -m old_</b><i>branch_name</i><b> new_</b><i>branch_name</i></td>
+                    <td>Стара назва <b>old_</b><i>branch_name</i> нова назва <b>new_</b><i>branch_name</i></td>
+                    <td>Перейменування гілки</td>
+                </tr>
+                <tr>
+                    <td><b>git add .</b></td>
+                    <td>------</td>
+                    <td>Коли потрібно додати до відстеження усі файли</td>
+                </tr>
+                <tr>
+                    <td><b>git add </b><i>file_path</i></td>
+                    <td>Де <i>file_path</i> це шлях до файлу</td>
+                    <td>Якщо один файл. Індексує вказаний файл для подальшого комміта</td>
+                </tr>
+                <tr>
+                    <td><b>git commit</b></td>
+                    <td>------</td>
+                    <td>Для того, щоб “зберегти” файли в Git</td>
+                </tr>
+                <tr>
+                    <td><b>git commit -m </b><i>“commit_message”</i></td>
+                    <td>Де <i>“commit_message”</i> – це ваше повідомлення, воно обов’язково повинно бути в лапках</td>
+                    <td>Фіксує проіндексовані зміни і зберігає їх в історію версій та додає повідомлення для комміту
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>git stash</b></td>
+                    <td>Зберігання та відновлення не завершених змін</td>
+                    <td>Тимчасова зберігає всі незафіксовані зміни у відслідковуваних файлів</td>
+                </tr>
+                <tr>
+                    <td><b>git stash pop</b></td>
+                    <td>Зберігання та відновлення не завершених змін</td>
+                    <td>Відновлює стан раніше збережених версій файлів</td>
+                </tr>
+                <tr>
+                    <td><b>git stash list</b></td>
+                    <td>Зберігання та відновлення не завершених змін</td>
+                    <td>Якщо потрібно вивести список всіх тимчасових зберігань</td>
+                </tr>
+                <tr>
+                    <td><b>git stash pop </b><i>stash@{2}</i></td>
+                    <td>Де <i>stash@{2}</i> це вказівник на елемент списку відкладених змін</td>
+                    <td>Якщо потрібно дістати та застосувати якийсь конкретний елемент списку</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>-----</td>
+                    <td>-----</td>
+                    <td>-----</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <hr>
+        <p>&#169; 20.01.2024</p>
+    </footer>
 </body>
+
 </html>
